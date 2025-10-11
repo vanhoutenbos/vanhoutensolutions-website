@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Sales / landing template mockup">
-  <rect width="1200" height="800" fill="#121a2a"/>
-  <rect x="80" y="60" width="1040" height="680" rx="16" fill="#ffffff"/>
-  <rect x="120" y="100" width="960" height="280" rx="12" fill="#e8fff2"/>
-  <rect x="160" y="140" width="520" height="60" rx="8" fill="#0ea5a5"/>
-  <rect x="160" y="220" width="420" height="20" rx="6" fill="#66c7c7"/>
-  <rect x="160" y="250" width="380" height="20" rx="6" fill="#b3e6e6"/>
-  <rect x="700" y="140" width="340" height="200" rx="10" fill="#ccfbf1"/>
-  <rect x="120" y="420" width="960" height="260" rx="12" fill="#f6f9ff"/>
-  <rect x="160" y="460" width="460" height="22" rx="6" fill="#2a3b5f"/>
-  <rect x="160" y="490" width="440" height="18" rx="6" fill="#7a8db7"/>
-  <rect x="160" y="520" width="420" height="18" rx="6" fill="#b3c0de"/>
-  <rect x="160" y="580" width="240" height="50" rx="10" fill="#0ea5a5"/>
-  <rect x="420" y="580" width="200" height="50" rx="10" fill="#dcfdfa"/>
-  <text x="175" y="175" font-size="28" font-family="Arial, sans-serif" fill="#ffffff">Scherpe headline</text>
-  <text x="175" y="245" font-size="18" font-family="Arial, sans-serif" fill="#0f3a3a">Korte benefit bullets • Social proof • Risicoreductie</text>
-  <text x="175" y="615" font-size="18" font-family="Arial, sans-serif" fill="#0f3a3a">CTA met duidelijke next step</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" aria-label="Sales / landing template mockup" role="img" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#121a2a"/><rect width="1040" height="680" x="80" y="60" fill="#fff" rx="16"/><rect width="960" height="280" x="120" y="100" fill="#e8fff2" rx="12"/><rect width="520" height="60" x="160" y="140" fill="#0ea5a5" rx="8"/><rect width="420" height="20" x="160" y="220" fill="#66c7c7" rx="6"/><rect width="380" height="20" x="160" y="250" fill="#b3e6e6" rx="6"/><rect width="340" height="200" x="700" y="140" fill="#ccfbf1" rx="10"/><rect width="960" height="260" x="120" y="420" fill="#f6f9ff" rx="12"/><rect width="460" height="22" x="160" y="460" fill="#2a3b5f" rx="6"/><rect width="440" height="18" x="160" y="490" fill="#7a8db7" rx="6"/><rect width="420" height="18" x="160" y="520" fill="#b3c0de" rx="6"/><rect width="240" height="50" x="160" y="580" fill="#0ea5a5" rx="10"/><rect width="200" height="50" x="420" y="580" fill="#dcfdfa" rx="10"/><text x="175" y="175" fill="#fff" font-family="Arial, sans-serif" font-size="28">Scherpe headline</text><text x="175" y="245" fill="#0f3a3a" font-family="Arial, sans-serif" font-size="18">Korte benefit bullets • Social proof • Risicoreductie</text><text x="175" y="615" fill="#0f3a3a" font-family="Arial, sans-serif" font-size="18">CTA met duidelijke next step</text></svg>

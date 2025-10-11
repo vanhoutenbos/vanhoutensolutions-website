@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Consulting / services template mockup">
-  <rect width="1200" height="800" fill="#0b1222"/>
-  <rect x="80" y="60" width="1040" height="680" rx="16" fill="#ffffff"/>
-  <rect x="120" y="100" width="960" height="140" rx="10" fill="#eef2ff"/>
-  <rect x="160" y="140" width="320" height="30" rx="6" fill="#3b82f6"/>
-  <rect x="160" y="180" width="280" height="16" rx="4" fill="#94b7ff"/>
-  <rect x="120" y="260" width="960" height="420" rx="10" fill="#f8fafc"/>
-  <rect x="160" y="300" width="240" height="200" rx="10" fill="#dbeafe"/>
-  <rect x="420" y="300" width="240" height="200" rx="10" fill="#dbeafe"/>
-  <rect x="680" y="300" width="240" height="200" rx="10" fill="#dbeafe"/>
-  <rect x="160" y="520" width="760" height="22" rx="6" fill="#2c3e66"/>
-  <rect x="160" y="550" width="740" height="18" rx="6" fill="#6d81ad"/>
-  <text x="165" y="165" font-size="24" font-family="Arial, sans-serif" fill="#1e3a8a">Consultancy diensten</text>
-  <text x="165" y="540" font-size="18" font-family="Arial, sans-serif" fill="#1e293b">Overzicht van diensten • Heldere structuur • Vertrouwen</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" aria-label="Consulting / services template mockup" role="img" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#0b1222"/><rect width="1040" height="680" x="80" y="60" fill="#fff" rx="16"/><rect width="960" height="140" x="120" y="100" fill="#eef2ff" rx="10"/><rect width="320" height="30" x="160" y="140" fill="#3b82f6" rx="6"/><rect width="280" height="16" x="160" y="180" fill="#94b7ff" rx="4"/><rect width="960" height="420" x="120" y="260" fill="#f8fafc" rx="10"/><rect width="240" height="200" x="160" y="300" fill="#dbeafe" rx="10"/><rect width="240" height="200" x="420" y="300" fill="#dbeafe" rx="10"/><rect width="240" height="200" x="680" y="300" fill="#dbeafe" rx="10"/><rect width="760" height="22" x="160" y="520" fill="#2c3e66" rx="6"/><rect width="740" height="18" x="160" y="550" fill="#6d81ad" rx="6"/><text x="165" y="165" fill="#1e3a8a" font-family="Arial, sans-serif" font-size="24">Consultancy diensten</text><text x="165" y="540" fill="#1e293b" font-family="Arial, sans-serif" font-size="18">Overzicht van diensten • Heldere structuur • Vertrouwen</text></svg>
