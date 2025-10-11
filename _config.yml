@@ -46,26 +46,30 @@ testimonials:
     quote: "Professionele website, snelle communicatie en geweldige ondersteuning!"
     image: "/assets/images/portfolio/fempact-preview.jpg"
     alt: "Fempact Website"
+    featured: true
     
   - name: "Aimee - Velvet Mind Academy"
     business: "Vertrouwen & Verandering"
     quote: "Werken met Jean-Paul aan mijn website was een feestje. Hij is enorm begaafd, denkt actief mee en weet elke wens perfect te vertalen. Bovendien is hij ook nog eens een ontzettend fijn mens om mee samen te werken."
     image: "/assets/images/portfolio/velvetmind-preview.jpg"
     alt: "Velvet Mind Academy Website"
+    featured: true
     
   - name: "Rutger - Golffanaat"
     business: "Golf Community & Content"
     quote: "Perfecte website voor onze golf community! Professioneel en gebruiksvriendelijk."
     image: "/assets/images/portfolio/golffanaat-preview.jpg"
     alt: "Golffanaat Website"
+    featured: true
 
-# Portfolio (all projects including testimonials + additional ones)
-portfolio:
+# Portfolio items (config-based, not collection) — renamed to avoid collision with collection
+portfolio_items:
   - name: "Cindy - Fempact"
     business: "Coaching & Training"
     quote: "Professionele website, snelle communicatie en geweldige ondersteuning!"
     image: "/assets/images/portfolio/fempact-preview.jpg"
     alt: "Fempact Website"
+    url: "/portfolio/cindy-fempact/"
     featured: true
     
   - name: "Aimee - Velvet Mind Academy"
@@ -73,6 +77,7 @@ portfolio:
     quote: "Eindelijk een website die past bij mijn visie en die ik zelf kan bijhouden!"
     image: "/assets/images/portfolio/velvetmind-preview.jpg"
     alt: "Velvet Mind Academy Website"
+    url: "/portfolio/aimee-velvet-mind-academy/"
     featured: true
     
   - name: "Golffanaat"
@@ -80,6 +85,7 @@ portfolio:
     quote: "Perfecte website voor onze golf community! Professioneel en gebruiksvriendelijk."
     image: "/assets/images/portfolio/golffanaat-preview.jpg"
     alt: "Golffanaat Website"
+    url: "/portfolio/golffanaat/"
     featured: true
     
   - name: "CPO Charge Free Home"
@@ -87,6 +93,7 @@ portfolio:
     description: "Professionele website voor duurzaam wonen project met focus op community building en transparantie."
     image: "/assets/images/portfolio/cpo-preview.jpg"
     alt: "CPO Charge Free Home Website"
+    url: "/portfolio/cpo-charge-free-home/"
     featured: false
     
   - name: "The Stratbook"
@@ -94,6 +101,7 @@ portfolio:
     description: "Moderne corporate website voor strategisch adviesbureau met focus op autoriteit en vertrouwen."
     image: "/assets/images/portfolio/stratbook-preview.jpg"
     alt: "The Stratbook Website"
+    url: "/portfolio/the-stratbook/"
     featured: false
 
 # Build settings
@@ -109,9 +117,6 @@ plugins:
 
 # Collections
 collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:name/
   services:
     output: true
     permalink: /:collection/:name/

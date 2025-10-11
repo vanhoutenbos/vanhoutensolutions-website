@@ -20,12 +20,13 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
 <section class="portfolio-grid-section">
   <div class="container">
     
-    {% for project in site.portfolio %}
+    {% assign items = site.portfolio_items %}
+    {% for project in items %}
     <div class="portfolio-project">
       <div class="project-image">
         <img src="{{ project.image | relative_url }}" alt="{{ project.alt }}" class="project-img">
         <div class="project-overlay">
-          <a href="{{ '/portfolio/' | append: project.name | slugify | relative_url }}" class="project-link">
+          <a href="{{ project.url | relative_url }}" class="project-link">
             Bekijk Project →
           </a>
         </div>
@@ -52,7 +53,7 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
           {% endif %}
         </div>
         
-        <a href="{{ '/portfolio/' | append: project.name | slugify | relative_url }}" class="read-more-btn">
+        <a href="{{ project.url | relative_url }}" class="read-more-btn">
           Bekijk project
         </a>
       </div>

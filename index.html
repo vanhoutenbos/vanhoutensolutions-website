@@ -126,7 +126,7 @@ keywords: "website laten maken, wordpress website, webdesigner, professionele we
 </section>
 
 <!-- Social Proof Section -->
-{% include testimonials.html %}
+{% include testimonials.html featured_only=true limit=3 %}
 
 <!-- Services Preview -->
 <section class="services-preview" id="services">
@@ -191,49 +191,21 @@ keywords: "website laten maken, wordpress website, webdesigner, professionele we
       </div>
       
       <div class="portfolio-grid">
-        
-        <!-- Portfolio Item 1: Fempact -->
+        {% assign items = site.portfolio_items | slice: 0, 6 %}
+        {% for project in items %}
         <div class="portfolio-item">
           <div class="portfolio-image">
-            <img src="{{ '/assets/images/portfolio/fempact-preview.jpg' | relative_url }}" alt="Fempact - Coaching Website">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.alt }}">
             <div class="portfolio-overlay">
               <div class="portfolio-info">
-                <h3>Fempact</h3>
-                <p>Coaching & Training Platform</p>
-                <a href="https://www.fempact.nl" target="_blank" rel="noopener" class="portfolio-link">Bekijk Live →</a>
+                <h3>{{ project.name }}</h3>
+                <p>{{ project.business }}</p>
+                <a href="{{ project.url | relative_url }}" class="portfolio-link">Bekijk Project →</a>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- Portfolio Item 2: Velvet Mind Academy-->
-        <div class="portfolio-item">
-          <div class="portfolio-image">
-            <img src="{{ '/assets/images/portfolio/velvetmind-preview.jpg' | relative_url }}" alt="Velvet Mind Academy - Werkboeken om je te helpen">
-            <div class="portfolio-overlay">
-              <div class="portfolio-info">
-                <h3>Velvet Mind Academy</h3>
-                <p>Werkboeken om je te helpen</p>
-                <a href="https://www.velvetmindacademy.nl" target="_blank" rel="noopener" class="portfolio-link">Bekijk Live →</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Portfolio Item 3: Golffanaat -->
-        <div class="portfolio-item">
-          <div class="portfolio-image">
-            <img src="{{ '/assets/images/portfolio/golffanaat-preview.jpg' | relative_url }}" alt="Golffanaat - Golf Community">
-            <div class="portfolio-overlay">
-              <div class="portfolio-info">
-                <h3>Golffanaat</h3>
-                <p>Golf Community Platform</p>
-                <a href="https://www.golffanaat.nl" target="_blank" rel="noopener" class="portfolio-link">Bekijk Live →</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
+        {% endfor %}
       </div>
       
       <div class="portfolio-cta">

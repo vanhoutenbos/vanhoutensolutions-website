@@ -6,7 +6,14 @@
       <h2 class="section-title">{{ include.title | default: "Vertrouwd door ondernemers door heel Nederland" }}</h2>
       
       <div class="testimonials-grid">
-        {% for testimonial in site.testimonials %}
+        {% assign list = site.testimonials %}
+        {% if include.featured_only == true %}
+          {% assign list = list | where_exp: 't', 't.featured == true' %}
+        {% endif %}
+        {% if include.limit %}
+          {% assign list = list | slice: 0, include.limit %}
+        {% endif %}
+        {% for testimonial in list %}
         <a href="{{ '/portfolio/' | append: testimonial.name | slugify | relative_url }}" class="testimonial-card-link">
           <div class="testimonial-card">
             <div class="testimonial-content">
