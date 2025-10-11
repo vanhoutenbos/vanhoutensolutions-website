@@ -20,7 +20,7 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
 <section class="portfolio-grid-section">
   <div class="container">
     
-    {% assign items = site.portfolio_items %}
+  {% assign items = site.portfolio_items | sort: 'date' | reverse %}
     {% for project in items %}
     <div class="portfolio-project">
       <div class="project-image">
@@ -35,6 +35,11 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
       <div class="project-content">
         <h2>{{ project.name }}</h2>
         <p class="project-business">{{ project.business }}</p>
+        {% if project.date %}
+        <div class="project-meta-row">
+          <span class="year-badge">{{ project.date | date: "%Y" }}</span>
+        </div>
+        {% endif %}
         
         {% if project.quote %}
         <blockquote class="project-quote">

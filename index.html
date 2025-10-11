@@ -191,7 +191,7 @@ keywords: "website laten maken, wordpress website, webdesigner, professionele we
       </div>
       
       <div class="portfolio-grid">
-        {% assign items = site.portfolio_items | slice: 0, 6 %}
+        {% assign items = site.portfolio_items | sort: 'date' | reverse | slice: 0, 3 %}
         {% for project in items %}
         <div class="portfolio-item">
           <div class="portfolio-image">
@@ -200,6 +200,9 @@ keywords: "website laten maken, wordpress website, webdesigner, professionele we
               <div class="portfolio-info">
                 <h3>{{ project.name }}</h3>
                 <p>{{ project.business }}</p>
+                {% if project.date %}
+                <span class="year-badge">{{ project.date | date: "%Y" }}</span>
+                {% endif %}
                 <a href="{{ project.url | relative_url }}" class="portfolio-link">Bekijk Project →</a>
               </div>
             </div>

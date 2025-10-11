@@ -71,6 +71,7 @@ portfolio_items:
     alt: "Fempact Website"
     url: "/portfolio/cindy-fempact/"
     featured: true
+    date: 2025-01-01
     
   - name: "Aimee - Velvet Mind Academy"
     business: "Vertrouwen & Verandering"
@@ -79,6 +80,7 @@ portfolio_items:
     alt: "Velvet Mind Academy Website"
     url: "/portfolio/aimee-velvet-mind-academy/"
     featured: true
+    date: 2025-01-01
     
   - name: "Golffanaat"
     business: "Golf Community & Content"
@@ -87,6 +89,7 @@ portfolio_items:
     alt: "Golffanaat Website"
     url: "/portfolio/golffanaat/"
     featured: true
+    date: 2024-01-01
     
   - name: "CPO Charge Free Home"
     business: "Duurzame Woonprojecten"
@@ -95,6 +98,7 @@ portfolio_items:
     alt: "CPO Charge Free Home Website"
     url: "/portfolio/cpo-charge-free-home/"
     featured: false
+    date: 2023-01-01
     
   - name: "The Stratbook"
     business: "Business Strategy & Consulting"
@@ -103,6 +107,7 @@ portfolio_items:
     alt: "The Stratbook Website"
     url: "/portfolio/the-stratbook/"
     featured: false
+    date: 2024-01-01
 
 # Build settings
 markdown: kramdown
