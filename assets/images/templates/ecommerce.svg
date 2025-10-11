@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="E-commerce template mockup">
+  <rect width="1200" height="800" fill="#101828"/>
+  <rect x="80" y="60" width="1040" height="680" rx="16" fill="#ffffff"/>
+  <rect x="120" y="100" width="960" height="160" rx="10" fill="#fff7ed"/>
+  <rect x="160" y="140" width="320" height="40" rx="8" fill="#f97316"/>
+  <rect x="160" y="200" width="260" height="16" rx="4" fill="#fdba74"/>
+  <rect x="120" y="280" width="960" height="420" rx="10" fill="#f8fafc"/>
+  <rect x="160" y="320" width="200" height="200" rx="12" fill="#fee2e2"/>
+  <rect x="380" y="320" width="200" height="200" rx="12" fill="#e2e8f0"/>
+  <rect x="600" y="320" width="200" height="200" rx="12" fill="#e2e8f0"/>
+  <rect x="820" y="320" width="200" height="200" rx="12" fill="#e2e8f0"/>
+  <rect x="160" y="540" width="160" height="18" rx="6" fill="#1f2937"/>
+  <rect x="380" y="540" width="160" height="18" rx="6" fill="#1f2937"/>
+  <rect x="600" y="540" width="160" height="18" rx="6" fill="#1f2937"/>
+  <rect x="820" y="540" width="160" height="18" rx="6" fill="#1f2937"/>
+  <text x="175" y="165" font-size="24" font-family="Arial, sans-serif" fill="#7c2d12">Actie! Producten met korting</text>
+  <text x="175" y="575" font-size="18" font-family="Arial, sans-serif" fill="#111827">Productnaam • Prijs • CTA</text>
+</svg>
