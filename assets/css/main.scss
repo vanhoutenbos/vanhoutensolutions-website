@@ -274,7 +274,7 @@ img {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 80px; // Account for fixed header
+  padding-top: 140px; // Extra ruimte t.o.v. navbar (was 80px)
 }
 
 .hero-container {
@@ -405,6 +405,9 @@ img {
 @media (max-width: 768px) {
   .hero-carousel .carousel-item img {
     height: 220px;
+  }
+  .hero-section {
+    padding-top: 100px; // Mobiel kleinere top-padding
   }
 }
 
