@@ -29,19 +29,19 @@ description: Neem contact op via ons beveiligde contactformulier of stuur een DM
         <form 
           name="contact" 
           method="POST" 
-          action="/bedankt/"
-          data-netlify="true" 
-          data-netlify-honeypot="bot-field"
-          netlify
+          action="https://formspree.io/f/xldppvpv"
           class="contact-form"
         >
           
-          <!-- Hidden fields for Netlify -->
-          <input type="hidden" name="form-name" value="contact">
+          <!-- Hidden fields for Formspree -->
+          <!-- Redirect to thank-you page after successful submission -->
+          <input type="hidden" name="_next" value="https://vanhoutensolutions.nl/bedankt/">
+          <!-- Email subject line (optional) -->
+          <input type="hidden" name="_subject" value="Nieuw contactformulier bericht">
           
-          <!-- Honeypot field (spam protection) -->
+          <!-- Honeypot field (spam protection) for Formspree -->
           <p class="hidden">
-            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            <label>Don't fill this out if you're human: <input name="_gotcha" /></label>
           </p>
           
           <!-- Name Field -->

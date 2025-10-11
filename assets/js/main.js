@@ -166,6 +166,50 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // ================================
+    // Templates Carousel (branche-voorbeelden)
+    // ================================
+    const carousel = document.querySelector('[data-carousel]');
+    if (carousel) {
+        const track = carousel.querySelector('.carousel-track');
+        const items = carousel.querySelectorAll('.carousel-item');
+        const prevBtn = carousel.querySelector('.carousel-nav.prev');
+        const nextBtn = carousel.querySelector('.carousel-nav.next');
+        let index = 0;
+
+        function itemWidth() {
+            const item = items[0];
+            if (!item) return 0;
+            const styles = getComputedStyle(item);
+            const width = item.getBoundingClientRect().width;
+            const gap = parseFloat(getComputedStyle(track).gap || '0');
+            return width + gap;
+        }
+
+        function update() {
+            const w = itemWidth();
+            track.style.transform = `translateX(${-index * w}px)`;
+        }
+
+        prevBtn?.addEventListener('click', () => {
+            index = Math.max(0, index - 1);
+            update();
+        });
+
+        nextBtn?.addEventListener('click', () => {
+            const maxIndex = Math.max(0, items.length - 1);
+            index = Math.min(maxIndex, index + 1);
+            update();
+        });
+
+        window.addEventListener('resize', () => {
+            update();
+        });
+
+        // initial position
+        update();
+    }
     
 });
 
