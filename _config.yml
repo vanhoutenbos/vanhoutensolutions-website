@@ -1,0 +1,127 @@
+# Van Houten Solutions - Jekyll Website
+
+title: Van Houten Solutions
+description: >-
+  Professionele WordPress websites voor startende ondernemers. 
+  Van idee naar live website in 2-6 weken - inclusief AI-tools en persoonlijke begeleiding.
+
+baseurl: ""
+url: "https://vanhoutensolutions.nl"
+
+# SEO & Social
+author:
+  name: Van Houten Solutions
+  email: info@vanhoutensolutions.nl
+  
+social:
+  instagram: vanhouten.solutions
+  linkedin: company/van-houten-solutions
+
+# Business Info
+business:
+  name: "Van Houten Solutions"
+  tagline: "WordPress websites die werken"
+  location: "Nederland"
+  price: "€899 excl. BTW"
+  delivery_time: "2-6 weken"
+  support_period: "2 weken gratis"
+  
+# Contact & CTA
+contact:
+  instagram: "vanhoutensolutions"
+  instagram_url: "https://instagram.com/vanhoutensolutions"
+  primary_cta: "Stuur me een DM op Instagram"
+  email: "info@vanhoutensolutions.nl"
+  response_time: "24 uur op werkdagen"
+  
+# TransIP Affiliate
+affiliate:
+  transip_link: "https://www.awin1.com/cread.php?awinmid=86885&awinaffid=2583469&ued=https%3A%2F%2Fwww.transip.nl%2Fbestel-domein%2Fcheck-voor-service%2Fprm%2F2024-wp-core%2F-%2F"
+  disclaimer: "Als TransIP affiliate partner ontvangen wij een kleine vergoeding bij aankopen via onze link, zonder extra kosten voor jou."
+
+# Testimonials
+testimonials:
+  - name: "Cindy - Fempact"
+    business: "Coaching & Training"
+    quote: "Professionele website, snelle communicatie en geweldige ondersteuning!"
+    image: "/assets/images/portfolio/fempact-preview.jpg"
+    alt: "Fempact Website"
+    
+  - name: "Aimee - Velvet Mind Academy"
+    business: "Vertrouwen & Verandering"
+    quote: "Werken met Jean-Paul aan mijn website was een feestje. Hij is enorm begaafd, denkt actief mee en weet elke wens perfect te vertalen. Bovendien is hij ook nog eens een ontzettend fijn mens om mee samen te werken."
+    image: "/assets/images/portfolio/velvetmind-preview.jpg"
+    alt: "Velvet Mind Academy Website"
+    
+  - name: "Rutger - Golffanaat"
+    business: "Golf Community & Content"
+    quote: "Perfecte website voor onze golf community! Professioneel en gebruiksvriendelijk."
+    image: "/assets/images/portfolio/golffanaat-preview.jpg"
+    alt: "Golffanaat Website"
+
+# Portfolio (all projects including testimonials + additional ones)
+portfolio:
+  - name: "Cindy - Fempact"
+    business: "Coaching & Training"
+    quote: "Professionele website, snelle communicatie en geweldige ondersteuning!"
+    image: "/assets/images/portfolio/fempact-preview.jpg"
+    alt: "Fempact Website"
+    featured: true
+    
+  - name: "Aimee - Velvet Mind Academy"
+    business: "Vertrouwen & Verandering"
+    quote: "Eindelijk een website die past bij mijn visie en die ik zelf kan bijhouden!"
+    image: "/assets/images/portfolio/velvetmind-preview.jpg"
+    alt: "Velvet Mind Academy Website"
+    featured: true
+    
+  - name: "Golffanaat"
+    business: "Golf Community & Content"
+    quote: "Perfecte website voor onze golf community! Professioneel en gebruiksvriendelijk."
+    image: "/assets/images/portfolio/golffanaat-preview.jpg"
+    alt: "Golffanaat Website"
+    featured: true
+    
+  - name: "CPO Charge Free Home"
+    business: "Duurzame Woonprojecten"
+    description: "Professionele website voor duurzaam wonen project met focus op community building en transparantie."
+    image: "/assets/images/portfolio/cpo-preview.jpg"
+    alt: "CPO Charge Free Home Website"
+    featured: false
+    
+  - name: "The Stratbook"
+    business: "Business Strategy & Consulting"
+    description: "Moderne corporate website voor strategisch adviesbureau met focus op autoriteit en vertrouwen."
+    image: "/assets/images/portfolio/stratbook-preview.jpg"
+    alt: "The Stratbook Website"
+    featured: false
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap  
+  - jekyll-seo-tag
+  - jekyll-sass-converter
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name/
+  services:
+    output: true
+    permalink: /:collection/:name/
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/

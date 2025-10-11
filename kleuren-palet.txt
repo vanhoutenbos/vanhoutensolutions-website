@@ -1,0 +1,50 @@
+# Kleuren Palet - Van Houten Solutions
+
+Gebaseerd op Logo-Color-PNG.png (512x512 RGBA)
+
+## Jekyll Color Variables
+```scss
+// Primary Brand Colors (uit logo geëxtraheerd)
+$primary-color: #F47A1E;     // Orange - main brand color
+$secondary-color: #99541F;   // Brown-orange - accent color  
+$brand-dark: #232323;        // Dark grey from logo
+
+// Neutral Palette
+$text-dark: #1F2937;
+$text-medium: #6B7280;
+$text-light: #9CA3AF;
+$background: #FFFFFF;
+$background-light: #F9FAFB;
+$border-light: #E5E7EB;
+
+// Action Colors
+$cta-primary: #3B82F6;    // Blue for Instagram CTA
+$cta-hover: #2563EB;
+$success: #10B981;
+$warning: #F59E0B;
+$error: #EF4444;
+
+// V-Shape Hero Colors
+$hero-gradient-start: $primary-color;
+$hero-gradient-end: $secondary-color;
+```
+
+## Typography Pairings
+```scss
+// Headers: Inter (Google Fonts)
+$font-family-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Body: Open Sans (Google Fonts)  
+$font-family-body: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Code/Monospace
+$font-family-mono: 'Fira Code', Consolas, Monaco, monospace;
+```
+
+## Responsive Breakpoints
+```scss
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+```

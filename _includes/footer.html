@@ -1,0 +1,76 @@
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      
+      <!-- Company Info -->
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="{{ '/assets/images/Logo-Color-PNG.png' | relative_url }}" alt="{{ site.business.name }}" class="footer-logo-img">
+          <h3>{{ site.business.name }}</h3>
+        </div>
+        <p class="footer-tagline">{{ site.business.tagline }}</p>
+        <p class="footer-description">{{ site.description }}</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Snel naar</h4>
+        <ul class="footer-links">
+          <li><a href="{{ site.baseurl }}/aanbod/">Aanbod & Prijzen</a></li>
+          <li><a href="{{ site.baseurl }}/hoe-werk-ik/">Mijn Aanpak</a></li>
+          <li><a href="{{ site.baseurl }}/portfolio/">Portfolio</a></li>
+          <li><a href="{{ site.baseurl }}/onderhoud/">WordPress Onderhoud</a></li>
+          <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Services -->
+      <div class="footer-section">
+        <h4>Diensten</h4>
+        <ul class="footer-links">
+          <li>WordPress Websites ({{ site.business.price }})</li>
+          <li>Onderhoud €49/mnd</li>
+          <li>AI-tools & Training</li>
+          <li>TransIP Hosting Setup</li>
+        </ul>
+      </div>
+      
+      <!-- Contact -->
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <p><strong>{{ site.business.location }}</strong></p>
+          <p>Snelle reactie op werkdagen</p>
+          <div class="footer-social">
+            <a href="{{ site.contact.instagram_url }}" target="_blank" rel="noopener" class="social-link instagram">
+              <span>Instagram</span> {{ site.contact.instagram }}
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.business.name }}. Alle rechten voorbehouden.</p>
+        <div class="legal-links">
+          <a href="{{ site.baseurl }}/algemene-voorwaarden/">Algemene Voorwaarden</a>
+          <a href="{{ site.baseurl }}/privacybeleid/">Privacybeleid</a>
+          <a href="{{ site.baseurl }}/cookies/">Cookies</a>
+        </div>
+      </div>
+      
+      <!-- TransIP Affiliate Disclaimer -->
+      <div class="footer-affiliate">
+        <p class="affiliate-text">
+          {{ site.affiliate.disclaimer }}
+          <a href="{{ site.affiliate.transip_link }}" target="_blank" rel="noopener">TransIP Hosting →</a>
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</footer>

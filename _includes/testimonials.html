@@ -1,0 +1,44 @@
+<!-- Social Proof / Testimonials Section -->
+<section class="social-proof-section">
+  <div class="container">
+    <div class="social-proof-content">
+      
+      <h2 class="section-title">{{ include.title | default: "Vertrouwd door ondernemers door heel Nederland" }}</h2>
+      
+      <div class="testimonials-grid">
+        {% for testimonial in site.testimonials %}
+        <a href="{{ '/portfolio/' | append: testimonial.name | slugify | relative_url }}" class="testimonial-card-link">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p class="testimonial-text">"{{ testimonial.quote }}"</p>
+              <div class="testimonial-author">
+                <strong>{{ testimonial.name }}</strong>
+                <span>{{ testimonial.business }}</span>
+              </div>
+              <div class="testimonial-read-more">
+                Lees het complete verhaal →
+              </div>
+            </div>
+            <div class="testimonial-preview">
+              <img src="{{ testimonial.image | relative_url }}" alt="{{ testimonial.alt }}" class="preview-img">
+              <div class="testimonial-overlay">
+                <span class="overlay-text">Klik voor het volledige verhaal</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      
+      {% if include.show_cta != false %}
+      <div class="social-proof-cta">
+        <p class="cta-text">Wil je zien hoe deze projecten tot stand zijn gekomen?</p>
+        <a href="{{ '/portfolio/' | relative_url }}" class="cta-button cta-primary cta-large">
+          Bekijk Alle Projecten
+        </a>
+      </div>
+      {% endif %}
+      
+    </div>
+  </div>
+</section>

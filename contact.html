@@ -1,0 +1,198 @@
+---
+layout: default
+title: Contact - Van Houten Solutions
+description: Neem contact op via ons beveiligde contactformulier of stuur een DM op Instagram. We reageren zo snel mogelijk op werkdagen.
+---
+
+<!-- Contact Page -->
+<section class="page-hero">
+  <div class="container">
+    <div class="contact-header">
+      <h1>Neem Contact Op</h1>
+      <p class="intro-text">
+        Heb je vragen over een website, wil je een offerte aanvragen, of gewoon even kennismaken? 
+        Vul het formulier in en we nemen zo snel mogelijk contact met je op (op werkdagen).
+      </p>
+      <p class="contact-alternative">
+        <strong>Liever direct contact?</strong> Stuur me een DM op 
+        <a href="{{ site.contact.instagram_url }}" target="_blank" rel="noopener">Instagram @{{ site.contact.instagram }}</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-wrapper">
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <form 
+          name="contact" 
+          method="POST" 
+          action="/bedankt/"
+          data-netlify="true" 
+          data-netlify-honeypot="bot-field"
+          netlify
+          class="contact-form"
+        >
+          
+          <!-- Hidden fields for Netlify -->
+          <input type="hidden" name="form-name" value="contact">
+          
+          <!-- Honeypot field (spam protection) -->
+          <p class="hidden">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="name" class="form-label">
+              Naam <span class="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              class="form-control" 
+              required 
+              placeholder="Je volledige naam"
+              aria-required="true"
+            >
+          </div>
+          
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="email" class="form-label">
+              E-mailadres <span class="required">*</span>
+            </label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-control" 
+              required 
+              placeholder="je@voorbeeld.nl"
+              aria-required="true"
+            >
+          </div>
+          
+          <!-- Phone Field (Optional) -->
+          <div class="form-group">
+            <label for="phone" class="form-label">
+              Telefoonnummer <span class="optional">(optioneel)</span>
+            </label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              class="form-control" 
+              placeholder="06 12345678"
+            >
+          </div>
+          
+          <!-- Subject/Reason Field -->
+          <div class="form-group">
+            <label for="subject" class="form-label">
+              Reden van contact <span class="required">*</span>
+            </label>
+            <select 
+              id="subject" 
+              name="subject" 
+              class="form-control" 
+              required
+              aria-required="true"
+            >
+              <option value="">-- Kies een optie --</option>
+              <option value="Offerte aanvragen">Offerte voor nieuwe website aanvragen</option>
+              <option value="Website onderhoud">Vragen over website onderhoud</option>
+              <option value="Bestaande website">Hulp bij bestaande website</option>
+              <option value="Algemene vraag">Algemene vraag</option>
+              <option value="Anders">Anders</option>
+            </select>
+          </div>
+          
+          <!-- Message Field -->
+          <div class="form-group">
+            <label for="message" class="form-label">
+              Bericht <span class="required">*</span>
+            </label>
+            <textarea 
+              id="message" 
+              name="message" 
+              class="form-control" 
+              rows="6" 
+              required 
+              placeholder="Vertel me waar je hulp bij nodig hebt..."
+              aria-required="true"
+            ></textarea>
+          </div>
+          
+          <!-- Privacy Consent -->
+          <div class="form-group form-checkbox">
+            <label class="checkbox-label">
+              <input 
+                type="checkbox" 
+                name="privacy-consent" 
+                required
+                aria-required="true"
+              >
+              <span class="checkbox-text">
+                Ik ga akkoord met het <a href="/privacybeleid/" target="_blank">privacybeleid</a> 
+                en begrijp dat mijn gegevens worden gebruikt om contact met mij op te nemen. <span class="required">*</span>
+              </span>
+            </label>
+          </div>
+          
+          <!-- Submit Button -->
+          <div class="form-actions">
+            <button type="submit" class="cta-button cta-primary cta-large">
+              Verstuur Bericht
+            </button>
+          </div>
+          
+          <!-- Privacy Note -->
+          <p class="form-privacy-note">
+            <small>
+              🔒 Je gegevens worden beveiligd verzonden en nooit met derden gedeeld. 
+              Lees meer in ons <a href="/privacybeleid/">privacybeleid</a>.
+            </small>
+          </p>
+          
+        </form>
+      </div>
+      
+      <!-- Contact Info Sidebar -->
+      <div class="contact-info-sidebar">
+        
+        <div class="contact-info-card">
+          <h3>📧 Direct Contact</h3>
+          <p>Snellere reactie nodig? Stuur me een DM!</p>
+          <a href="{{ site.contact.instagram_url }}" target="_blank" rel="noopener" class="cta-button cta-secondary">
+            Instagram DM
+          </a>
+        </div>
+        
+        <div class="contact-info-card">
+          <h3>⏱️ Reactietijd</h3>
+          <p>We reageren <strong>zo snel mogelijk</strong> op werkdagen (ma-vr)</p>
+          <p><small>Weekend berichten worden op maandag beantwoord.</small></p>
+        </div>
+        
+        <div class="contact-info-card">
+          <h3>🎯 Wat te verwachten?</h3>
+          <ul class="contact-checklist">
+            <li>✓ Persoonlijke reactie (geen bot)</li>
+            <li>✓ Antwoord op al je vragen</li>
+            <li>✓ Eventueel een kennismakingsgesprek</li>
+            <li>✓ Vrijblijvende offerte indien gewenst</li>
+          </ul>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+{% include testimonials.html title="Waarom kiezen ondernemers voor Van Houten Solutions?" %}

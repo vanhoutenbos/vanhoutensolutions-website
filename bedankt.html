@@ -1,0 +1,243 @@
+---
+layout: default
+title: Bedankt voor je bericht! - Van Houten Solutions
+description: Je bericht is succesvol verzonden. We nemen zo snel mogelijk contact met je op.
+---
+
+<section class="success-section">
+  <div class="container">
+    <div class="success-content">
+      
+      <div class="success-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+      
+      <h1>Bedankt voor je bericht!</h1>
+      
+      <p class="success-message">
+        Super! Je bericht is bij mij binnen. Ik ga er <strong>zo snel mogelijk</strong> 
+        naar kijken en stuur je een persoonlijk antwoord.
+      </p>
+      
+      <div class="next-steps">
+        <h2>Wat gebeurt er nu?</h2>
+        <ul class="steps-list">
+          <li>
+            <span class="step-number">1</span>
+            <div class="step-content">
+              <strong>Ik lees je bericht</strong>
+              <p>Binnen een paar uur bekijk ik persoonlijk je vraag</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">2</span>
+            <div class="step-content">
+              <strong>Directe reactie</strong>
+              <p>Ik stuur je zo snel mogelijk een persoonlijk antwoord (werkdagen: binnen 24u)</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">3</span>
+            <div class="step-content">
+              <strong>Kennismaking</strong>
+              <p>Als het klikt, kunnen we een gesprek inplannen om je project te bespreken</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="alternative-contact">
+        <p>
+          <strong>Snellere reactie nodig?</strong><br>
+          Stuur me direct een DM op Instagram!
+        </p>
+        <a href="{{ site.contact.instagram_url }}" target="_blank" rel="noopener" class="cta-button cta-primary cta-large">
+          📱 Instagram DM
+        </a>
+      </div>
+      
+      <div class="back-links">
+        <a href="/" class="link-button">← Terug naar Home</a>
+        <a href="/aanbod/" class="link-button">Bekijk Aanbod & Prijzen</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<style>
+.success-section {
+  padding: 4rem 0;
+  background-color: var(--background-light);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.success-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: var(--background);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.success-icon {
+  color: var(--success);
+  margin-bottom: 1.5rem;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-content h1 {
+  color: var(--brand-dark);
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  font-size: 1.125rem;
+  color: var(--text-medium);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.next-steps {
+  text-align: left;
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+}
+
+.next-steps h2 {
+  text-align: center;
+  color: var(--brand-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.steps-list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.steps-list li:last-child {
+  margin-bottom: 0;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.step-content {
+  flex: 1;
+  padding-top: 0.25rem;
+}
+
+.step-content strong {
+  display: block;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.step-content p {
+  margin: 0;
+  color: var(--text-medium);
+  font-size: 0.95rem;
+}
+
+.alternative-contact {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background-color: rgba(244, 122, 30, 0.05);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--primary-color);
+}
+
+.alternative-contact p {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.back-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-medium);
+  border: 2px solid var(--border-light);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.link-button:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .success-content {
+    padding: 2rem 1rem;
+  }
+  
+  .next-steps {
+    padding: 1.5rem;
+  }
+  
+  .back-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
