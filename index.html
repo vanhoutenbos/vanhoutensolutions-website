@@ -67,11 +67,24 @@ keywords: "website laten maken, wordpress website, webdesigner, professionele we
           
         </div>
         
-        <!-- Hero Image -->
+        <!-- Hero Image (Carousel) -->
         <div class="hero-image">
-          <div class="hero-mockup">
-            <!-- Website mockup afbeelding -->
-            <img src="{{ '/assets/images/website-mockup.png' | relative_url }}" alt="WordPress Website Voorbeeld" class="mockup-img">
+          <div class="hero-mockup hero-carousel" data-carousel data-autoplay="true" data-interval="4000">
+            <button class="carousel-nav prev" aria-label="Vorige">&#10094;</button>
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <div class="carousel-item">
+                  <img src="{{ '/assets/images/templates/coaching.svg' | relative_url }}" alt="Coaching WordPress design voorbeeld"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="{{ '/assets/images/templates/sales.svg' | relative_url }}" alt="Sales/Landing WordPress design voorbeeld"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="{{ '/assets/images/templates/consulting.svg' | relative_url }}" alt="Consulting/Services WordPress design voorbeeld"/>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-nav next" aria-label="Volgende">&#10095;</button>
           </div>
         </div>
         

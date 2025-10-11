@@ -170,18 +170,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================
     // Templates Carousel (branche-voorbeelden)
     // ================================
-    const carousel = document.querySelector('[data-carousel]');
-    if (carousel) {
+    const carousels = document.querySelectorAll('[data-carousel]');
+    carousels.forEach((carousel) => {
         const track = carousel.querySelector('.carousel-track');
         const items = carousel.querySelectorAll('.carousel-item');
         const prevBtn = carousel.querySelector('.carousel-nav.prev');
         const nextBtn = carousel.querySelector('.carousel-nav.next');
         let index = 0;
+        let timer = null;
+        const autoplay = carousel.getAttribute('data-autoplay') === 'true';
+        const interval = parseInt(carousel.getAttribute('data-interval') || '5000', 10);
 
         function itemWidth() {
             const item = items[0];
             if (!item) return 0;
-            const styles = getComputedStyle(item);
             const width = item.getBoundingClientRect().width;
             const gap = parseFloat(getComputedStyle(track).gap || '0');
             return width + gap;
@@ -192,24 +194,40 @@ document.addEventListener('DOMContentLoaded', function() {
             track.style.transform = `translateX(${-index * w}px)`;
         }
 
-        prevBtn?.addEventListener('click', () => {
-            index = Math.max(0, index - 1);
-            update();
-        });
-
-        nextBtn?.addEventListener('click', () => {
+        function next() {
             const maxIndex = Math.max(0, items.length - 1);
-            index = Math.min(maxIndex, index + 1);
+            index = (index >= maxIndex) ? 0 : index + 1;
             update();
-        });
+        }
 
-        window.addEventListener('resize', () => {
+        function prev() {
+            const maxIndex = Math.max(0, items.length - 1);
+            index = (index <= 0) ? maxIndex : index - 1;
             update();
-        });
+        }
 
-        // initial position
+        function startAutoplay() {
+            if (!autoplay) return;
+            stopAutoplay();
+            timer = setInterval(next, interval);
+        }
+
+        function stopAutoplay() {
+            if (timer) {
+                clearInterval(timer);
+                timer = null;
+            }
+        }
+
+        prevBtn?.addEventListener('click', () => { prev(); startAutoplay(); });
+        nextBtn?.addEventListener('click', () => { next(); startAutoplay(); });
+        window.addEventListener('resize', update);
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+
         update();
-    }
+        startAutoplay();
+    });
     
 });
 
@@ -403,5 +421,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
-});
 });

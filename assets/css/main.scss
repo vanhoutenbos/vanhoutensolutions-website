@@ -386,6 +386,28 @@ img {
   }
 }
 
+/* Hero Carousel overrides */
+.hero-carousel {
+  width: 100%;
+  max-width: 520px;
+}
+
+.hero-carousel .carousel-item img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.hero-carousel .carousel-nav {
+  top: calc(50% - 20px);
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .hero-carousel .carousel-item img {
+    height: 220px;
+  }
+}
+
 // Social Proof Section
 .social-proof-section {
   padding: 5rem 0;
