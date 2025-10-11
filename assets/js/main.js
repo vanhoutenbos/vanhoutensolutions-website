@@ -170,64 +170,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================
     // Templates Carousel (branche-voorbeelden)
     // ================================
-    const carousels = document.querySelectorAll('[data-carousel]');
-    carousels.forEach((carousel) => {
-        const track = carousel.querySelector('.carousel-track');
-        const items = carousel.querySelectorAll('.carousel-item');
-        const prevBtn = carousel.querySelector('.carousel-nav.prev');
-        const nextBtn = carousel.querySelector('.carousel-nav.next');
-        let index = 0;
-        let timer = null;
-        const autoplay = carousel.getAttribute('data-autoplay') === 'true';
-        const interval = parseInt(carousel.getAttribute('data-interval') || '5000', 10);
+    // Init Splide sliders
+    const heroSplideEl = document.querySelector('.hero-splide');
+    if (heroSplideEl && window.Splide) {
+        const autoplay = heroSplideEl.getAttribute('data-splide-autoplay') === 'true';
+        const interval = parseInt(heroSplideEl.getAttribute('data-splide-interval') || '4000', 10);
+        new Splide(heroSplideEl, {
+            type: 'loop',
+            autoplay,
+            interval,
+            arrows: true,
+            pagination: false,
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            speed: 600,
+          }).mount();
+    }
 
-        function itemWidth() {
-            const item = items[0];
-            if (!item) return 0;
-            const width = item.getBoundingClientRect().width;
-            const gap = parseFloat(getComputedStyle(track).gap || '0');
-            return width + gap;
-        }
-
-        function update() {
-            const w = itemWidth();
-            track.style.transform = `translateX(${-index * w}px)`;
-        }
-
-        function next() {
-            const maxIndex = Math.max(0, items.length - 1);
-            index = (index >= maxIndex) ? 0 : index + 1;
-            update();
-        }
-
-        function prev() {
-            const maxIndex = Math.max(0, items.length - 1);
-            index = (index <= 0) ? maxIndex : index - 1;
-            update();
-        }
-
-        function startAutoplay() {
-            if (!autoplay) return;
-            stopAutoplay();
-            timer = setInterval(next, interval);
-        }
-
-        function stopAutoplay() {
-            if (timer) {
-                clearInterval(timer);
-                timer = null;
+    const templatesSplideEl = document.querySelector('.templates-splide');
+    if (templatesSplideEl && window.Splide) {
+        const perPage = parseInt(templatesSplideEl.getAttribute('data-splide-per-page') || '3', 10);
+        const gap = templatesSplideEl.getAttribute('data-splide-gap') || '16px';
+        new Splide(templatesSplideEl, {
+            type: 'loop',
+            perPage,
+            gap,
+            autoplay: false,
+            arrows: true,
+            pagination: false,
+            breakpoints: {
+                1024: { perPage: 2 },
+                640: { perPage: 1 }
             }
-        }
-
-        prevBtn?.addEventListener('click', () => { prev(); startAutoplay(); });
-        nextBtn?.addEventListener('click', () => { next(); startAutoplay(); });
-        window.addEventListener('resize', update);
-        carousel.addEventListener('mouseenter', stopAutoplay);
-        carousel.addEventListener('mouseleave', startAutoplay);
-
-        update();
-        startAutoplay();
-    });
+        }).mount();
+    }
     
 });
 
