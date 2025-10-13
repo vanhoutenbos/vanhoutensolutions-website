@@ -56,6 +56,71 @@
     <!-- Footer -->
     {% include footer.html %}
     
+    <!-- Cookie Banner (simple, no plugin) -->
+    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #111827; color: white; padding: 16px; z-index: 1000; display: none; box-shadow: 0 -2px 12px rgba(0,0,0,.2);">
+      <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.4; flex: 1 1 260px;">
+          Deze website gebruikt cookies voor essentiële functies en anonieme statistieken. 
+          <a href="{{ site.baseurl }}/cookies/" style="color: #34d399; text-decoration: underline;">Lees meer</a>
+        </p>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" onclick="acceptEssential()" style="background: transparent; color: white; border: 1px solid rgba(255,255,255,.7); padding: 8px 14px; cursor: pointer; border-radius: 6px; font-size: 14px;">Alleen noodzakelijk</button>
+          <button type="button" onclick="acceptCookies()" style="background: #10b981; color: #0b3b2e; border: none; padding: 9px 16px; cursor: pointer; border-radius: 6px; font-weight: 600; font-size: 14px;">Accepteren</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function() {
+        // Read GA measurement id from config if provided
+  var GA_MEASUREMENT_ID = "{{ site.google_analytics | default: '' }}";
+        // Utility: load GA only once
+        function loadGoogleAnalytics() {
+          if (!GA_MEASUREMENT_ID) return; // no ID configured
+          if (window._gaLoaded) return; // guard
+          window._gaLoaded = true;
+          // Inject gtag script
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_MEASUREMENT_ID);
+          document.head.appendChild(s);
+          // Setup dataLayer and gtag
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID, { anonymize_ip: true });
+        }
+        // Expose globally for buttons
+        window.acceptCookies = function() {
+          try { localStorage.setItem('cookie-consent', 'all'); } catch(e) {}
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'none';
+          loadGoogleAnalytics();
+        };
+        window.acceptEssential = function() {
+          try { localStorage.setItem('cookie-consent', 'essential'); } catch(e) {}
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'none';
+          // Do not load GA
+        };
+        // On load: show banner if no choice; if consent=all then load GA
+        function initConsent() {
+          var consent = null;
+          try { consent = localStorage.getItem('cookie-consent'); } catch(e) {}
+          if (!consent) {
+            var banner = document.getElementById('cookie-banner');
+            if (banner) banner.style.display = 'block';
+          } else if (consent === 'all') {
+            loadGoogleAnalytics();
+          }
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initConsent);
+        } else {
+          initConsent();
+        }
+      })();
+    </script>
+    
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
