@@ -102,6 +102,12 @@
           if (banner) banner.style.display = 'none';
           // Do not load GA
         };
+        // Re-open settings: clear saved choice and show banner again
+        window.openCookieSettings = function() {
+          try { localStorage.removeItem('cookie-consent'); } catch(e) {}
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'block';
+        };
         // On load: show banner if no choice; if consent=all then load GA
         function initConsent() {
           var consent = null;
