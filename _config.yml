@@ -8,6 +8,9 @@ description: >-
 baseurl: ""
 url: "https://vanhoutensolutions.nl"
 
+# Analytics
+google_analytics: G-MNWJTR58KE
+
 # SEO & Social
 author:
   name: Van Houten Solutions

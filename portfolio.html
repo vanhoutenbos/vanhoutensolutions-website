@@ -17,6 +17,15 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
   </div>
 </section>
 
+<section class="tips-section" style="background: #f9fafb; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb;">
+  <div class="container" style="padding: 2rem 0;">
+    <div class="tips-box" style="background: #fff; border-left: 4px solid #10b981; box-shadow: 0 2px 8px rgba(16,185,129,0.07); padding: 1.5rem 1.5rem 1.5rem 2rem; border-radius: 8px; max-width: 700px; margin: 0 auto;">
+      <h3 style="margin-top:0; color:#10b981; font-size:1.2rem; font-weight:700;">💡 Tip</h3>
+  <p style="margin-bottom:0.5em; color:#374151;">Laat je inspireren door deze projecten, maar kies vooral wat bij jouw bedrijf past. Jouw wensen staan altijd centraal!</p>
+    </div>
+  </div>
+</section>
+
 <section class="portfolio-grid-section">
   <div class="container">
     
@@ -26,7 +35,7 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
       <div class="project-image">
         <img src="{{ project.image | relative_url }}" alt="{{ project.alt }}" class="project-img">
         <div class="project-overlay">
-          <a href="{{ project.url | relative_url }}" class="project-link">
+          <a href="{{ project.live_url | default: project.url | relative_url }}" class="project-link" target="_blank" rel="noopener">
             Bekijk Project →
           </a>
         </div>
