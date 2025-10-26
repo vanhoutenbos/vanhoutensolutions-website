@@ -13,14 +13,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Ontdek de WordPress websites die ik heb gebouwd voor ondernemers. Van coaching websites tot duurzame woonprojecten - elk project met zijn eigen verhaal." />
 <meta property="og:description" content="Ontdek de WordPress websites die ik heb gebouwd voor ondernemers. Van coaching websites tot duurzame woonprojecten - elk project met zijn eigen verhaal." />
-<link rel="canonical" href="https://vanhoutensolutions.nl/portfolio/" />
-<meta property="og:url" content="https://vanhoutensolutions.nl/portfolio/" />
+<link rel="canonical" href="http://localhost:4000/portfolio/" />
+<meta property="og:url" content="http://localhost:4000/portfolio/" />
 <meta property="og:site_name" content="Van Houten Solutions" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Portfolio - Mijn WordPress Projecten Van Houten Solutions" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Van Houten Solutions"},"description":"Ontdek de WordPress websites die ik heb gebouwd voor ondernemers. Van coaching websites tot duurzame woonprojecten - elk project met zijn eigen verhaal.","headline":"Portfolio - Mijn WordPress Projecten Van Houten Solutions","url":"https://vanhoutensolutions.nl/portfolio/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Van Houten Solutions"},"description":"Ontdek de WordPress websites die ik heb gebouwd voor ondernemers. Van coaching websites tot duurzame woonprojecten - elk project met zijn eigen verhaal.","headline":"Portfolio - Mijn WordPress Projecten Van Houten Solutions","url":"http://localhost:4000/portfolio/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -31,6 +31,8 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- Splide CSS (carousel) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -44,8 +46,8 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Van Houten Solutions",
-      "description": "Professionele WordPress websites voor startende ondernemers.  Van idee naar live website in 2 tot 6 weken - inclusief AI-tools en persoonlijke begeleiding.",
-      "url": "https://vanhoutensolutions.nl",
+      "description": "Professionele WordPress websites voor startende ondernemers.  Van idee naar live website in 2-6 weken - inclusief AI-tools en persoonlijke begeleiding.",
+      "url": "http://localhost:4000",
       "priceRange": "€899",
       "areaServed": {
         "@type": "Place",  
@@ -82,27 +84,22 @@
       <!-- Navigation Menu -->
       <div class="navbar-menu">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="/" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="/aanbod/" class="nav-link">Aanbod</a>
-          </li>
-          <li class="nav-item">
-            <a href="/hoe-werk-ik/" class="nav-link">Mijn Aanpak</a>
-          </li>
-          <li class="nav-item">
-            <a href="/portfolio/" class="nav-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="/over-mij/" class="nav-link">Over Mij</a>
-          </li>
-          <li class="nav-item">
-            <a href="/onderhoud/" class="nav-link">Onderhoud</a>
-          </li>
-          <li class="nav-item">
-            <a href="/contact/" class="nav-link">Contact</a>
-          </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="/aanbod/" class="nav-link">Aanbod <span class="dropdown-icon" style="display:inline-block;vertical-align:middle;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:4px;"><path d="M4 6L8 10L12 6" stroke="#99541F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/onderhoud/" class="nav-link">Onderhoud</a></li>
+                <li><a href="/hoe-werk-ik/" class="nav-link">Mijn Aanpak</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="/portfolio/" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact/" class="nav-link">Contact</a>
+            </li>
         </ul>
         
         <!-- CTA Button -->
@@ -118,7 +115,7 @@
     
     <!-- Main Content -->
     <main>
-      <section class="portfolio-hero">
+      <section class="page-hero">
   <div class="container">
     <div class="portfolio-intro">
       <h1>Mijn Portfolio</h1>
@@ -130,9 +127,211 @@
   </div>
 </section>
 
+<section class="tips-section" style="background: #f9fafb; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb;">
+  <div class="container" style="padding: 2rem 0;">
+    <div class="tips-box" style="background: #fff; border-left: 4px solid #10b981; box-shadow: 0 2px 8px rgba(16,185,129,0.07); padding: 1.5rem 1.5rem 1.5rem 2rem; border-radius: 8px; max-width: 700px; margin: 0 auto;">
+      <h3 style="margin-top:0; color:#10b981; font-size:1.2rem; font-weight:700;">💡 Tip</h3>
+  <p style="margin-bottom:0.5em; color:#374151;">Laat je inspireren door deze projecten, maar kies vooral wat bij jouw bedrijf past. Jouw wensen staan altijd centraal!</p>
+    </div>
+  </div>
+</section>
+
 <section class="portfolio-grid-section">
   <div class="container">
     
+  
+    
+    <div class="portfolio-project">
+      <div class="project-image">
+        <img src="/assets/images/portfolio/fempact-preview.jpg" alt="Fempact Website" class="project-img">
+        <div class="project-overlay">
+          <a href="/portfolio/cindy-fempact/" class="project-link" target="_blank" rel="noopener">
+            Bekijk Project →
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-content">
+        <h2>Cindy - Fempact</h2>
+        <p class="project-business">Coaching & Training</p>
+        
+        <div class="project-meta-row">
+          <span class="year-badge">2025</span>
+        </div>
+        
+        
+        
+        <blockquote class="project-quote">
+          "Professionele website, snelle communicatie en geweldige ondersteuning!"
+        </blockquote>
+        
+        
+        <div class="project-tags">
+          <span class="tag">WordPress</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">SEO</span>
+          
+          <span class="tag featured-tag">Met Testimonial</span>
+          
+        </div>
+        
+        <a href="/portfolio/cindy-fempact/" class="read-more-btn">
+          Bekijk project
+        </a>
+      </div>
+    </div>
+    
+    <div class="portfolio-project">
+      <div class="project-image">
+        <img src="/assets/images/portfolio/velvetmind-preview.jpg" alt="Velvet Mind Academy Website" class="project-img">
+        <div class="project-overlay">
+          <a href="/portfolio/aimee-velvet-mind-academy/" class="project-link" target="_blank" rel="noopener">
+            Bekijk Project →
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-content">
+        <h2>Aimee - Velvet Mind Academy</h2>
+        <p class="project-business">Vertrouwen & Verandering</p>
+        
+        <div class="project-meta-row">
+          <span class="year-badge">2025</span>
+        </div>
+        
+        
+        
+        <blockquote class="project-quote">
+          "Eindelijk een website die past bij mijn visie en die ik zelf kan bijhouden!"
+        </blockquote>
+        
+        
+        <div class="project-tags">
+          <span class="tag">WordPress</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">SEO</span>
+          
+          <span class="tag featured-tag">Met Testimonial</span>
+          
+        </div>
+        
+        <a href="/portfolio/aimee-velvet-mind-academy/" class="read-more-btn">
+          Bekijk project
+        </a>
+      </div>
+    </div>
+    
+    <div class="portfolio-project">
+      <div class="project-image">
+        <img src="/assets/images/portfolio/stratbook-preview.jpg" alt="The Stratbook Website" class="project-img">
+        <div class="project-overlay">
+          <a href="/portfolio/the-stratbook/" class="project-link" target="_blank" rel="noopener">
+            Bekijk Project →
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-content">
+        <h2>The Stratbook</h2>
+        <p class="project-business">Business Strategy & Consulting</p>
+        
+        <div class="project-meta-row">
+          <span class="year-badge">2024</span>
+        </div>
+        
+        
+        
+        <p class="project-description">Moderne corporate website voor strategisch adviesbureau met focus op autoriteit en vertrouwen.</p>
+        
+        
+        <div class="project-tags">
+          <span class="tag">WordPress</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">SEO</span>
+          
+        </div>
+        
+        <a href="/portfolio/the-stratbook/" class="read-more-btn">
+          Bekijk project
+        </a>
+      </div>
+    </div>
+    
+    <div class="portfolio-project">
+      <div class="project-image">
+        <img src="/assets/images/portfolio/golffanaat-preview.jpg" alt="Golffanaat Website" class="project-img">
+        <div class="project-overlay">
+          <a href="/portfolio/golffanaat/" class="project-link" target="_blank" rel="noopener">
+            Bekijk Project →
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-content">
+        <h2>Golffanaat</h2>
+        <p class="project-business">Golf Community & Content</p>
+        
+        <div class="project-meta-row">
+          <span class="year-badge">2024</span>
+        </div>
+        
+        
+        
+        <blockquote class="project-quote">
+          "Perfecte website voor onze golf community! Professioneel en gebruiksvriendelijk."
+        </blockquote>
+        
+        
+        <div class="project-tags">
+          <span class="tag">WordPress</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">SEO</span>
+          
+          <span class="tag featured-tag">Met Testimonial</span>
+          
+        </div>
+        
+        <a href="/portfolio/golffanaat/" class="read-more-btn">
+          Bekijk project
+        </a>
+      </div>
+    </div>
+    
+    <div class="portfolio-project">
+      <div class="project-image">
+        <img src="/assets/images/portfolio/cpo-preview.jpg" alt="CPO Charge Free Home Website" class="project-img">
+        <div class="project-overlay">
+          <a href="/portfolio/cpo-charge-free-home/" class="project-link" target="_blank" rel="noopener">
+            Bekijk Project →
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-content">
+        <h2>CPO Charge Free Home</h2>
+        <p class="project-business">Duurzame Woonprojecten</p>
+        
+        <div class="project-meta-row">
+          <span class="year-badge">2023</span>
+        </div>
+        
+        
+        
+        <p class="project-description">Professionele website voor duurzaam wonen project met focus op community building en transparantie.</p>
+        
+        
+        <div class="project-tags">
+          <span class="tag">WordPress</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">SEO</span>
+          
+        </div>
+        
+        <a href="/portfolio/cpo-charge-free-home/" class="read-more-btn">
+          Bekijk project
+        </a>
+      </div>
+    </div>
     
     
   </div>
@@ -157,26 +356,6 @@
 </section>
 
 <style>
-.portfolio-hero {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  color: white;
-  padding: 5rem 0 4rem;
-  text-align: center;
-}
-
-.portfolio-intro h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.intro-text {
-  font-size: 1.25rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-
 .portfolio-grid-section {
   padding: 5rem 0;
 }
@@ -357,14 +536,6 @@
 }
 
 @media (max-width: 768px) {
-  .portfolio-hero {
-    padding: 3rem 0 2rem;
-  }
-  
-  .portfolio-intro h1 {
-    font-size: 2.5rem;
-  }
-  
   .portfolio-project {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -405,7 +576,7 @@
           <h3>Van Houten Solutions</h3>
         </div>
         <p class="footer-tagline">WordPress websites die werken</p>
-        <p class="footer-description">Professionele WordPress websites voor startende ondernemers.  Van idee naar live website in 6 weken - inclusief AI-tools en persoonlijke begeleiding.</p>
+        <p class="footer-description">Professionele WordPress websites voor startende ondernemers.  Van idee naar live website in 2-6 weken - inclusief AI-tools en persoonlijke begeleiding.</p>
       </div>
       
       <!-- Quick Links -->
@@ -455,6 +626,7 @@
           <a href="/algemene-voorwaarden/">Algemene Voorwaarden</a>
           <a href="/privacybeleid/">Privacybeleid</a>
           <a href="/cookies/">Cookies</a>
+          <a href="#" onclick="openCookieSettings(); return false;">Cookie-instellingen</a>
         </div>
       </div>
       
@@ -468,9 +640,86 @@
     </div>
     
   </div>
+
+  <!-- Wist-je-dat tip -->
+  <div class="footer-tip" style="background:#f9fafb; border-top:1px solid #e5e7eb; text-align:center; padding:0.75rem 0; color:#374151; font-size:0.98rem;">
+    <span style="color:#10b981; font-weight:600;">Wist je dat?</span> Snelle aanlevering van je materialen zorgt voor een snellere livegang van jouw website!
+  </div>
 </footer>
     
+    <!-- Cookie Banner (simple, no plugin) -->
+    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #111827; color: white; padding: 16px; z-index: 1000; display: none; box-shadow: 0 -2px 12px rgba(0,0,0,.2);">
+      <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.4; flex: 1 1 260px;">
+          Deze website gebruikt cookies voor essentiële functies en anonieme statistieken. 
+          <a href="/cookies/" style="color: #34d399; text-decoration: underline;">Lees meer</a>
+        </p>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" onclick="acceptEssential()" style="background: transparent; color: white; border: 1px solid rgba(255,255,255,.7); padding: 8px 14px; cursor: pointer; border-radius: 6px; font-size: 14px;">Alleen noodzakelijk</button>
+          <button type="button" onclick="acceptCookies()" style="background: #10b981; color: #0b3b2e; border: none; padding: 9px 16px; cursor: pointer; border-radius: 6px; font-weight: 600; font-size: 14px;">Accepteren</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function() {
+        // Read GA measurement id from config if provided
+  var GA_MEASUREMENT_ID = "G-MNWJTR58KE";
+        // Utility: load GA only once
+        function loadGoogleAnalytics() {
+          if (!GA_MEASUREMENT_ID) return; // no ID configured
+          if (window._gaLoaded) return; // guard
+          window._gaLoaded = true;
+          // Inject gtag script
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_MEASUREMENT_ID);
+          document.head.appendChild(s);
+          // Setup dataLayer and gtag
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID, { anonymize_ip: true });
+        }
+        // Expose globally for buttons
+        window.acceptCookies = function() {
+          try { localStorage.setItem('cookie-consent', 'all'); } catch(e) {}
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'none';
+          loadGoogleAnalytics();
+        };
+        window.acceptEssential = function() {
+          try { localStorage.setItem('cookie-consent', 'essential'); } catch(e) {}
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'none';
+          // Do not load GA
+        };
+        // Re-open settings: clear saved choice and show banner again
+        window.openCookieSettings = function() {
+          try { localStorage.removeItem('cookie-consent'); } catch(e) {}
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'block';
+        };
+        // On load: show banner if no choice; if consent=all then load GA
+        function initConsent() {
+          var consent = null;
+          try { consent = localStorage.getItem('cookie-consent'); } catch(e) {}
+          if (!consent) {
+            var banner = document.getElementById('cookie-banner');
+            if (banner) banner.style.display = 'block';
+          } else if (consent === 'all') {
+            loadGoogleAnalytics();
+          }
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initConsent);
+        } else {
+          initConsent();
+        }
+      })();
+    </script>
+    
     <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

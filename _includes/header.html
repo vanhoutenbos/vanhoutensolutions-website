@@ -19,27 +19,22 @@
       <!-- Navigation Menu -->
       <div class="navbar-menu">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/aanbod/" class="nav-link">Aanbod</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/hoe-werk-ik/" class="nav-link">Mijn Aanpak</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/portfolio/" class="nav-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/over-mij/" class="nav-link">Over Mij</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/onderhoud/" class="nav-link">Onderhoud</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/contact/" class="nav-link">Contact</a>
-          </li>
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="{{ site.baseurl }}/aanbod/" class="nav-link">Aanbod <span class="dropdown-icon" style="display:inline-block;vertical-align:middle;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:4px;"><path d="M4 6L8 10L12 6" stroke="#99541F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ site.baseurl }}/onderhoud/" class="nav-link">Onderhoud</a></li>
+                <li><a href="{{ site.baseurl }}/hoe-werk-ik/" class="nav-link">Mijn Aanpak</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/portfolio/" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/contact/" class="nav-link">Contact</a>
+            </li>
         </ul>
         
         <!-- CTA Button -->

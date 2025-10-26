@@ -7,18 +7,60 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.navbar-menu');
     
     if (navToggle && navMenu) {
-        navToggle.addEventListener('click', function() {
+        let lastToggleTs = 0;
+        const TOGGLE_DEBOUNCE_MS = 350;
+
+        const toggleMenu = function(e) {
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            const now = Date.now();
+            if (now - lastToggleTs < TOGGLE_DEBOUNCE_MS) return; // guard against double fire (click + touchend)
+            lastToggleTs = now;
             navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on links
+        };
+
+        // Open/close on click and touch
+        navToggle.addEventListener('click', toggleMenu, { passive: false });
+        navToggle.addEventListener('touchend', toggleMenu, { passive: false });
+
+        // Prevent clicks inside the menu from bubbling to document
+        navMenu.addEventListener('click', function(e) { e.stopPropagation(); }, { passive: true });
+
+        // Close when clicking a nav link
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
             });
+        });
+
+        // Close when clicking outside
+        const closeMenu = () => {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        };
+        document.addEventListener('click', function(e) {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                closeMenu();
+            }
+        }, { passive: true });
+        document.addEventListener('touchstart', function(e) {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                closeMenu();
+            }
+        }, { passive: true });
+
+        // Close on Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeMenu();
+            }
         });
     }
     
@@ -166,6 +208,44 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // ================================
+    // Templates Carousel (branche-voorbeelden)
+    // ================================
+    // Init Splide sliders
+    const heroSplideEl = document.querySelector('.hero-splide');
+    if (heroSplideEl && window.Splide) {
+        const autoplay = heroSplideEl.getAttribute('data-splide-autoplay') === 'true';
+        const interval = parseInt(heroSplideEl.getAttribute('data-splide-interval') || '4000', 10);
+        new Splide(heroSplideEl, {
+            type: 'loop',
+            autoplay,
+            interval,
+            arrows: true,
+            pagination: false,
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            speed: 600,
+          }).mount();
+    }
+
+    const templatesSplideEl = document.querySelector('.templates-splide');
+    if (templatesSplideEl && window.Splide) {
+        const perPage = parseInt(templatesSplideEl.getAttribute('data-splide-per-page') || '3', 10);
+        const gap = templatesSplideEl.getAttribute('data-splide-gap') || '16px';
+        new Splide(templatesSplideEl, {
+            type: 'loop',
+            perPage,
+            gap,
+            autoplay: false,
+            arrows: true,
+            pagination: false,
+            breakpoints: {
+                1024: { perPage: 2 },
+                640: { perPage: 1 }
+            }
+        }).mount();
+    }
     
 });
 
@@ -359,5 +439,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
-});
 });

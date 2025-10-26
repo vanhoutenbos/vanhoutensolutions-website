@@ -13,14 +13,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Privacyverklaring Van Houten Solutions - Hoe wij omgaan met uw persoonsgegevens" />
 <meta property="og:description" content="Privacyverklaring Van Houten Solutions - Hoe wij omgaan met uw persoonsgegevens" />
-<link rel="canonical" href="https://vanhoutensolutions.nl/privacybeleid/" />
-<meta property="og:url" content="https://vanhoutensolutions.nl/privacybeleid/" />
+<link rel="canonical" href="http://localhost:4000/privacybeleid/" />
+<meta property="og:url" content="http://localhost:4000/privacybeleid/" />
 <meta property="og:site_name" content="Van Houten Solutions" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Privacyverklaring - Van Houten Solutions" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Van Houten Solutions"},"description":"Privacyverklaring Van Houten Solutions - Hoe wij omgaan met uw persoonsgegevens","headline":"Privacyverklaring - Van Houten Solutions","url":"https://vanhoutensolutions.nl/privacybeleid/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Van Houten Solutions"},"description":"Privacyverklaring Van Houten Solutions - Hoe wij omgaan met uw persoonsgegevens","headline":"Privacyverklaring - Van Houten Solutions","url":"http://localhost:4000/privacybeleid/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -31,6 +31,8 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- Splide CSS (carousel) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -44,8 +46,8 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Van Houten Solutions",
-      "description": "Professionele WordPress websites voor startende ondernemers.  Van idee naar live website in 6 weken - inclusief AI-tools en persoonlijke begeleiding.",
-      "url": "https://vanhoutensolutions.nl",
+      "description": "Professionele WordPress websites voor startende ondernemers.  Van idee naar live website in 2-6 weken - inclusief AI-tools en persoonlijke begeleiding.",
+      "url": "http://localhost:4000",
       "priceRange": "€899",
       "areaServed": {
         "@type": "Place",  
@@ -82,27 +84,22 @@
       <!-- Navigation Menu -->
       <div class="navbar-menu">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="/" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="/aanbod/" class="nav-link">Aanbod</a>
-          </li>
-          <li class="nav-item">
-            <a href="/hoe-werk-ik/" class="nav-link">Mijn Aanpak</a>
-          </li>
-          <li class="nav-item">
-            <a href="/portfolio/" class="nav-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="/over-mij/" class="nav-link">Over Mij</a>
-          </li>
-          <li class="nav-item">
-            <a href="/onderhoud/" class="nav-link">Onderhoud</a>
-          </li>
-          <li class="nav-item">
-            <a href="/contact/" class="nav-link">Contact</a>
-          </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="/aanbod/" class="nav-link">Aanbod <span class="dropdown-icon" style="display:inline-block;vertical-align:middle;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:4px;"><path d="M4 6L8 10L12 6" stroke="#99541F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/onderhoud/" class="nav-link">Onderhoud</a></li>
+                <li><a href="/hoe-werk-ik/" class="nav-link">Mijn Aanpak</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="/portfolio/" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact/" class="nav-link">Contact</a>
+            </li>
         </ul>
         
         <!-- CTA Button -->
@@ -124,7 +121,7 @@
       
 # Privacyverklaring Van Houten Solutions
 
-*Laatst bijgewerkt: 10 oktober 2025*
+*Laatst bijgewerkt: 11 oktober 2025*
 
 Van Houten Solutions hecht veel waarde aan de bescherming van uw persoonsgegevens. In deze privacyverklaring leggen wij uit welke persoonsgegevens wij verzamelen, waarom wij deze gegevens verzamelen en hoe wij omgaan met uw gegevens.
 
@@ -194,7 +191,7 @@ Wij verwerken uw gegevens op basis van:
 ## 6. Met wie delen wij uw gegevens?
 
 Wij delen uw gegevens alleen met:
-- **Netlify** voor contactformulier verwerking (formulierdata wordt beveiligd opgeslagen)
+- **Formspree** voor contactformulierverwerking (doorsturen van formulierdata naar email)
 - **Ons boekhoudingspakket** voor administratie en offertes
 - **Google Analytics** voor website statistieken (geanonimiseerd)
 - **Wettelijk verplichte instanties** (bijv. Belastingdienst)
@@ -339,7 +336,7 @@ Voor vragen over deze privacyverklaring of over de verwerking van uw persoonsgeg
           <h3>Van Houten Solutions</h3>
         </div>
         <p class="footer-tagline">WordPress websites die werken</p>
-        <p class="footer-description">Professionele WordPress websites voor startende ondernemers.  Van idee naar live website in 6 weken - inclusief AI-tools en persoonlijke begeleiding.</p>
+        <p class="footer-description">Professionele WordPress websites voor startende ondernemers.  Van idee naar live website in 2-6 weken - inclusief AI-tools en persoonlijke begeleiding.</p>
       </div>
       
       <!-- Quick Links -->
@@ -389,6 +386,7 @@ Voor vragen over deze privacyverklaring of over de verwerking van uw persoonsgeg
           <a href="/algemene-voorwaarden/">Algemene Voorwaarden</a>
           <a href="/privacybeleid/">Privacybeleid</a>
           <a href="/cookies/">Cookies</a>
+          <a href="#" onclick="openCookieSettings(); return false;">Cookie-instellingen</a>
         </div>
       </div>
       
@@ -402,9 +400,86 @@ Voor vragen over deze privacyverklaring of over de verwerking van uw persoonsgeg
     </div>
     
   </div>
+
+  <!-- Wist-je-dat tip -->
+  <div class="footer-tip" style="background:#f9fafb; border-top:1px solid #e5e7eb; text-align:center; padding:0.75rem 0; color:#374151; font-size:0.98rem;">
+    <span style="color:#10b981; font-weight:600;">Wist je dat?</span> Snelle aanlevering van je materialen zorgt voor een snellere livegang van jouw website!
+  </div>
 </footer>
     
+    <!-- Cookie Banner (simple, no plugin) -->
+    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #111827; color: white; padding: 16px; z-index: 1000; display: none; box-shadow: 0 -2px 12px rgba(0,0,0,.2);">
+      <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.4; flex: 1 1 260px;">
+          Deze website gebruikt cookies voor essentiële functies en anonieme statistieken. 
+          <a href="/cookies/" style="color: #34d399; text-decoration: underline;">Lees meer</a>
+        </p>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" onclick="acceptEssential()" style="background: transparent; color: white; border: 1px solid rgba(255,255,255,.7); padding: 8px 14px; cursor: pointer; border-radius: 6px; font-size: 14px;">Alleen noodzakelijk</button>
+          <button type="button" onclick="acceptCookies()" style="background: #10b981; color: #0b3b2e; border: none; padding: 9px 16px; cursor: pointer; border-radius: 6px; font-weight: 600; font-size: 14px;">Accepteren</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function() {
+        // Read GA measurement id from config if provided
+  var GA_MEASUREMENT_ID = "G-MNWJTR58KE";
+        // Utility: load GA only once
+        function loadGoogleAnalytics() {
+          if (!GA_MEASUREMENT_ID) return; // no ID configured
+          if (window._gaLoaded) return; // guard
+          window._gaLoaded = true;
+          // Inject gtag script
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_MEASUREMENT_ID);
+          document.head.appendChild(s);
+          // Setup dataLayer and gtag
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID, { anonymize_ip: true });
+        }
+        // Expose globally for buttons
+        window.acceptCookies = function() {
+          try { localStorage.setItem('cookie-consent', 'all'); } catch(e) {}
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'none';
+          loadGoogleAnalytics();
+        };
+        window.acceptEssential = function() {
+          try { localStorage.setItem('cookie-consent', 'essential'); } catch(e) {}
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'none';
+          // Do not load GA
+        };
+        // Re-open settings: clear saved choice and show banner again
+        window.openCookieSettings = function() {
+          try { localStorage.removeItem('cookie-consent'); } catch(e) {}
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'block';
+        };
+        // On load: show banner if no choice; if consent=all then load GA
+        function initConsent() {
+          var consent = null;
+          try { consent = localStorage.getItem('cookie-consent'); } catch(e) {}
+          if (!consent) {
+            var banner = document.getElementById('cookie-banner');
+            if (banner) banner.style.display = 'block';
+          } else if (consent === 'all') {
+            loadGoogleAnalytics();
+          }
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initConsent);
+        } else {
+          initConsent();
+        }
+      })();
+    </script>
+    
     <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
