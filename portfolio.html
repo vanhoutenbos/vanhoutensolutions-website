@@ -69,8 +69,8 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
         
         <a href="{{ project.url | relative_url }}" class="read-more-btn">
           Bekijk project
-        </a>
-      </div>
+              <a href="{{ project.live_url | default: project.url | relative_url }}" class="read-more-btn">
+                Bekijk project
     </div>
     {% endfor %}
     

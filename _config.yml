@@ -73,6 +73,7 @@ portfolio_items:
     image: "/assets/images/portfolio/fempact-preview.jpg"
     alt: "Fempact Website"
     url: "/portfolio/cindy-fempact/"
+    live_url: "https://fempact.nl"
     featured: true
     date: 2025-01-01
     
@@ -82,6 +83,7 @@ portfolio_items:
     image: "/assets/images/portfolio/velvetmind-preview.jpg"
     alt: "Velvet Mind Academy Website"
     url: "/portfolio/aimee-velvet-mind-academy/"
+    live_url: "https://velvetmindacademy.nl"
     featured: true
     date: 2025-01-01
     
@@ -91,6 +93,7 @@ portfolio_items:
     image: "/assets/images/portfolio/golffanaat-preview.jpg"
     alt: "Golffanaat Website"
     url: "/portfolio/golffanaat/"
+    live_url: "https://golffanaat.nl"
     featured: true
     date: 2024-01-01
     
@@ -100,6 +103,7 @@ portfolio_items:
     image: "/assets/images/portfolio/cpo-preview.jpg"
     alt: "CPO Charge Free Home Website"
     url: "/portfolio/cpo-charge-free-home/"
+    live_url: "https://cpochargefreehome.nl"
     featured: false
     date: 2023-01-01
     
@@ -109,6 +113,7 @@ portfolio_items:
     image: "/assets/images/portfolio/stratbook-preview.jpg"
     alt: "The Stratbook Website"
     url: "/portfolio/the-stratbook/"
+    live_url: "https://thestratbook.com"
     featured: false
     date: 2024-01-01
 
