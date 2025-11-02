@@ -67,19 +67,21 @@ testimonials:
 
 # Portfolio items (config-based, not collection) — renamed to avoid collision with collection
 portfolio_items:
-  - name: "Cindy - Fempact"
-    business: "Coaching & Training"
-    quote: "Professionele website, snelle communicatie en geweldige ondersteuning!"
-    image: "/assets/images/portfolio/fempact-preview.jpg"
-    alt: "Fempact Website"
-    url: "/portfolio/cindy-fempact/"
-    live_url: "https://fempact.nl"
+    
+  - name: "Smart Daily Essentials Deals"
+    business: "Golf Blog & Informatie"
+    quote: "Een prachtige en toegankelijke website die onze deals perfect presenteert."
+    image: "/assets/images/portfolio/smart-daily-essential-deals-preview.jpg"
+    alt: "Smart Daily Essentials Deals Website"
+    url: "/portfolio/smartdailyessentialsdeals/"
+    live_url: "https://smartdailyessentialsdeals.com/"
     featured: true
-    date: 2025-01-01
+    date: 2025-06-01
     
   - name: "Aimee - Velvet Mind Academy"
     business: "Vertrouwen & Verandering"
-    quote: "Eindelijk een website die past bij mijn visie en die ik zelf kan bijhouden!"
+    full_testimonial: "Werken met Jean Paul aan mijn website was een feestje. Hij is enorm begaafd, denkt actief mee en weet elke wens perfect te vertalen. Bovendien is hij ook nog eens een ontzettend fijn mens om mee samen te werken!"
+    quote: "Werken met Jean Paul aan mijn website was een feestje. Hij is enorm begaafd, denkt actief mee en weet elke wens perfect te vertalen. Bovendien is hij ook nog eens een ontzettend fijn mens om mee samen te werken!"
     image: "/assets/images/portfolio/velvetmind-preview.jpg"
     alt: "Velvet Mind Academy Website"
     url: "/portfolio/aimee-velvet-mind-academy/"
@@ -87,8 +89,19 @@ portfolio_items:
     featured: true
     date: 2025-01-01
     
+  - name: "Cindy - Fempact"
+    business: "Coaching & Training"
+    full_testimonial: "JP is een absolute expert in zijn vakgebied. Hij beschikt over veel kennis, denkt inhoudelijk sterk mee en weet technische zaken helder uit te leggen. Wat ik daarnaast enorm waardeer, is zijn geduld en persoonlijke aanpak. Het contact verloopt altijd snel en laagdrempelig, waardoor samenwerken met JP niet alleen professioneel maar ook prettig en efficiënt is."
+    quote: "JP is een absolute expert in zijn vakgebied. Hij beschikt over veel kennis, denkt inhoudelijk sterk mee en weet technische zaken helder uit te leggen. JP is niet alleen professioneel maar ook prettig en efficiënt."
+    image: "/assets/images/portfolio/fempact-preview.jpg"
+    alt: "Fempact Website"
+    url: "/portfolio/cindy-fempact/"
+    live_url: "https://fempact.nl"
+    featured: true
+    date: 2025-01-01
+    
   - name: "Golffanaat"
-    business: "Golf Community & Content"
+    business: "Golf Blog & Informatie"
     quote: "Perfecte website voor onze golf community! Professioneel en gebruiksvriendelijk."
     image: "/assets/images/portfolio/golffanaat-preview.jpg"
     alt: "Golffanaat Website"
@@ -99,7 +112,7 @@ portfolio_items:
     
   - name: "CPO Charge Free Home"
     business: "Duurzame Woonprojecten"
-    description: "Professionele website voor duurzaam wonen project met focus op community building en transparantie."
+    description: "Professionele website voor ons duurzaam wonen project met focus op duidelijke taal en transparantie."
     image: "/assets/images/portfolio/cpo-preview.jpg"
     alt: "CPO Charge Free Home Website"
     url: "/portfolio/cpo-charge-free-home/"
@@ -109,7 +122,7 @@ portfolio_items:
     
   - name: "The Stratbook"
     business: "Business Strategy & Consulting"
-    description: "Moderne corporate website voor strategisch adviesbureau met focus op autoriteit en vertrouwen."
+    description: "Moderne website voor game gerelateerde en gebruiksvriendelijke content."
     image: "/assets/images/portfolio/stratbook-preview.jpg"
     alt: "The Stratbook Website"
     url: "/portfolio/the-stratbook/"

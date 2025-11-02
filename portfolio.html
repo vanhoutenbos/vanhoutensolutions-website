@@ -251,22 +251,31 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
 }
 
 .portfolio-cta-section {
-  background-color: var(--background-light);
+  background: linear-gradient(135deg, var(--brand-dark) 0%, var(--primary-color) 100%);
   padding: 4rem 0;
   text-align: center;
+  color: #fff;
 }
 
-.cta-content h2 {
-  color: var(--brand-dark);
+.portfolio-cta-section .cta-content h2 {
+  color: #fff;
   margin-bottom: 1rem;
   font-size: 2.25rem;
 }
 
-.cta-content p {
-  color: var(--text-medium);
+.portfolio-cta-section .cta-content p {
+  color: #fff;
   font-size: 1.125rem;
   margin-bottom: 2rem;
+  opacity: 0.95;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.portfolio-cta-section .cta-buttons .cta-button {color:#fff;}
+.portfolio-cta-section .cta-buttons .cta-button.cta-secondary {background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.3);} 
+.portfolio-cta-section .cta-buttons .cta-button.cta-secondary:hover {background:#fff; color:var(--primary-color);} 
 
 .cta-buttons {
   display: flex;
