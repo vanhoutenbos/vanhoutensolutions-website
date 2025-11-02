@@ -169,33 +169,60 @@ keywords: "wordpress website pakket, website prijs, prijzen, aanbod, wat kost ee
   </div>
 </section>
 
-<!-- What's NOT Included -->
+<!-- What's NOT Included (Revised) -->
 <section class="not-included-section">
   <div class="container">
-    <h2 class="section-title">Niet inbegrepen</h2>
-    
-    <div class="not-included-grid">
-      <div class="not-included-item">❌ Marketing/advertenties</div>
-      <div class="not-included-item">❌ Schrijven van content (copywriting)</div>
-      <div class="not-included-item">❌ Geavanceerde SEO </div>
-      <div class="not-included-item">❌ Professionele fotografie</div>
-      <div class="not-included-item">❌ 6e pagina of meer</div>
-      <div class="not-included-item">❌ Meertalige website</div>
-      <div class="not-included-item">❌ Complexe formulieren</div>
-      <div class="not-included-item">❌ Maatwerk design (uniek vanaf nul)</div>
+    <h2 class="section-title">Wat valt er (nog) niet onder dit pakket?</h2>
+    <p class="section-intro" style="text-align:center; max-width:820px; margin:0 auto 2rem;">
+      Je krijgt een compleet fundament. Sommige onderdelen vragen maatwerk of specialistische inzet. Die kun je later toevoegen – ik denk graag mee wat slim is voor jouw fase.
+    </p>
+
+    <div class="not-included-grid refined">
+      <div class="not-included-item soft">
+        <strong>Marketing & Ads</strong>
+        <span class="desc">Campagnes en betaalde advertenties vallen erbuiten.</span>
+      </div>
+      <div class="not-included-item soft">
+        <strong>Uitgebreid Copywriting</strong>
+        <span class="desc">Ik schrijf geen volledige teksten; je krijgt wel structuur + AI content guide.</span>
+      </div>
+      <div class="not-included-item soft">
+        <strong>Geavanceerde SEO</strong>
+        <span class="desc">Technische basis zit erin. Dieper traject kan later.</span>
+      </div>
+      <div class="not-included-item soft">
+        <strong>Professionele Fotografie</strong>
+        <span class="desc">Je levert beelden aan – ik adviseer wat werkt.</span>
+      </div>
+      <div class="not-included-item soft">
+        <strong>Extra Pagina's >5</strong>
+        <span class="desc">Uitbreiden kan altijd in overleg.</span>
+      </div>
+      <div class="not-included-item soft">
+        <strong>Meertaligheid</strong>
+        <span class="desc">Basis is NL; multi-language kan je zelf inregelen met plugins.</span>
+      </div>
+      <div class="not-included-item soft">
+        <strong>Complexe Formulieren</strong>
+        <span class="desc">Standaard contactformulier inbegrepen.</span>
+      </div>
+      <div class="not-included-item soft">
+        <strong>Volledig Custom Design vanaf nul</strong>
+        <span class="desc">We starten vanuit een slimme structuur voor snelheid & budget.</span>
+      </div>
     </div>
-    
-      <h2 class="section-title">Wat valt buiten het pakket?</h2>
-      <ul class="not-included-list">
-        <li>Hosting & domeinnaam – ik help je graag met advies!</li>
-        <li>Premium plugins/themes – optioneel, tegen meerprijs.</li>
-        <li>SEO optimalisatie – basis inbegrepen, uitgebreid mogelijk.</li>
-        <li>Content schrijven – je krijgt begeleiding en tips.</li>
-        <li>Fotografie – ik geef advies voor de beste beelden.</li>
+
+    <div class="not-included-clarity">
+      <ul class="clarity-list">
+        <li><strong>Hosting & domein:</strong> regel je zelf; ik help je kiezen.</li>
+        <li><strong>Premium plugins/themes:</strong> alleen indien nodig, altijd in overleg.</li>
+        <li><strong>Content schrijven:</strong> jij levert, ik begeleid + AI tools.</li>
+        <li><strong>Uitbreidingen (shop, ledenomgeving):</strong> mogelijk als vervolgstap.</li>
       </ul>
-    <!--<p class="not-included-note">
-      💡 <strong>Wil je toch één van deze extra's?</strong> Dat kan! Neem contact op voor een offerte op maat.
-    </p>-->
+      <div class="upgrade-box">
+        💡 <strong>Toch één van deze onderdelen nodig?</strong> Vraag gerust naar een passende uitbreiding.
+      </div>
+    </div>
   </div>
 </section>
 
@@ -490,6 +517,17 @@ keywords: "wordpress website pakket, website prijs, prijzen, aanbod, wat kost ee
   color: var(--text-medium);
   border-left: 3px solid #e0e0e0;
 }
+
+/* Revised not-included styling */
+.not-included-grid.refined {gap:1.25rem;}
+.not-included-item.soft {position:relative; padding:1.1rem 1rem 1rem 1rem; background:#fff; border:1px solid #eceff1; border-left:4px solid var(--primary-color); box-shadow:0 2px 6px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:0.35rem;}
+.not-included-item.soft strong {color:var(--brand-dark); font-size:0.95rem; letter-spacing:0.3px;}
+.not-included-item.soft .desc {font-size:0.8rem; line-height:1.4; color:var(--text-medium);}
+.not-included-clarity {margin-top:2.5rem; display:grid; gap:1.5rem; grid-template-columns:1fr 320px; align-items:start;}
+.clarity-list {margin:0; padding-left:1.2rem; font-size:0.9rem; line-height:1.5; color:var(--text-medium);}
+.clarity-list li {margin-bottom:0.4rem;}
+.upgrade-box {background:linear-gradient(135deg,var(--primary-color),var(--secondary-color)); color:#fff; padding:1rem 1.25rem; border-radius:12px; font-size:0.85rem; line-height:1.4; box-shadow:0 4px 12px rgba(0,0,0,0.15);}
+@media (max-width:900px){.not-included-clarity {grid-template-columns:1fr;} .upgrade-box{order:2;} }
 
 .not-included-note {
   margin-top: 2rem;
