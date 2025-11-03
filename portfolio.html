@@ -58,15 +58,6 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
         <p class="project-description">{{ project.description }}</p>
         {% endif %}
         
-        <div class="project-tags">
-          <span class="tag">WordPress</span>
-          <span class="tag">Responsive Design</span>
-          <span class="tag">SEO</span>
-          {% if project.featured %}
-          <span class="tag featured-tag">Met Testimonial</span>
-          {% endif %}
-        </div>
-        
         <a href="{{ project.live_url | default: project.url | relative_url }}" class="read-more-btn">
           Bekijk project
         </a>
@@ -86,9 +77,6 @@ keywords: "wordpress portfolio, website voorbeelden, professionele websites, kla
       <div class="cta-buttons">
         <a href="{{ site.contact.instagram_url }}" target="_blank" rel="noopener" class="cta-button cta-primary">
           {{ site.contact.primary_cta }}
-        </a>
-        <a href="{{ '/contact/' | relative_url }}" class="cta-button cta-secondary">
-          Of Stuur Een Email
         </a>
       </div>
     </div>
